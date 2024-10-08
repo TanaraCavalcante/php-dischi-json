@@ -1,7 +1,5 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
 
 createApp({
-  data() {
-    
-  }
+ 
 }).mount('#app')
