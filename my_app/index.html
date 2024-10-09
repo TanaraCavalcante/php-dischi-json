@@ -11,7 +11,7 @@
      <link rel="stylesheet" href="css/style.css">
 
      <!-- Axios -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
      <!-- Vue -->
      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -21,9 +21,10 @@
 </head>
 <body>
     <div id="app">
-        <header></header>
+        <!-- controllo se vue  funziona -->
+        <header>{{ message }}</header>
         <main>
-            <section>
+            <section class="container">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">

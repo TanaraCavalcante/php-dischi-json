@@ -1,4 +1,7 @@
-:root*
+:root {
+ --var-color-1: #05131E;
+ --var-color-2: #1D2D3C;
+}
 
 *{
     margin: 0;
