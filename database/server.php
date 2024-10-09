@@ -1,10 +1,11 @@
 <?php
 //! Prendo l'api 
-$apiDischi = file_get_contents("/api/dischi.json");
-echo $apiDischi;
+$apiDischi = file_get_contents("../api/dischi.json");
 
 //! Risposta in Json
-// header('Content-Type: application/jason');
+header("Content-Type: application/json");
+
+echo $apiDischi;
 
 //! Converto in json, se non è in json, per essere legibile in PHP
-// jason_encode()
+ //json_encode($apiDischi); in questo caso lo arquivo è già in formato Json!
