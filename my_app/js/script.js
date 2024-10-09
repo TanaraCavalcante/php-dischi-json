@@ -1,12 +1,12 @@
 //! indirizzo dell'api
 // http://localhost/php-dischi-json/database/server.php
+console.log('sono js')
+const { createApp } = Vue
 
-import { createApp } from 'Vue'
-
-createApp({
-  data() {
-    return {
-      message: " Ciao",
+  createApp({
+    data() {
+      return {
+        api: 'http://localhost/php-dischi-json/database/server.php',
+      }
     }
-  }
-}).mount('#app')
+  }).mount('#app')
