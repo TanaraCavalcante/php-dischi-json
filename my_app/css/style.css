@@ -9,3 +9,31 @@
     box-sizing: border-box;
 }
 
+.container-style{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Generics */
+
+body{
+    background-color: var(--var-color-2);
+    margin: 0 auto;
+}
+
+div .card{
+    background-color: #05131E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 20rem;
+    width: 13rem;
+}
+
+header{
+   background-color: var(--var-color-1);
+   padding: 10px;
+   color: white;
+   text-align: center;
+   margin-bottom: 50px;
+}

@@ -22,19 +22,22 @@
 <body>
     <div id="app">
         <!-- controllo se vue  funziona -->
-        <header>API Dischi</header>
-        <main>
-            <section class="container row">
-                <div v-for="(disc,i) in discs" :key="i" class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+        <header>
+            <h1>API Disc</h1>
+        </header>
+        <main class="container-style">
+            <section class="row ">
+                <div v-for="(disc,i) in discs" :key="i" class="col-4  g-2">
+                <div class="card">
+                    <img src={{disc.poster}} class="card-img-top" alt={{disc.title}}>
                     <div class="card-body">
                       <h5 class="card-title">{{disc.title}}</h5>
-                      <p class="card-text"></p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text">{{disc.author}}</p>
+                      <h6 class="card-text">{{disc.year}}</h6>
                     </div>
                   </div>
                 </div>
+           
             </section>
         </main> 
     </div>

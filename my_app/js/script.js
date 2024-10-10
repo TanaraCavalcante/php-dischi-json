@@ -21,6 +21,9 @@ createApp({
 					console.log(error);
 				});
 		},
+		// getImagePath: function(imgPath){
+		// 	return new URL(imgPath, import.meta.url).href;
+		// }
 	},
 
 	//!Mostra i dischi
