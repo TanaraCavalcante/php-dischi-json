@@ -11,8 +11,8 @@ createApp({
 	
 	methods: {
 		//!Chiamata GET per i dischi
-		getDiscs(url) {
-			axios.get(url)
+		getDiscs(apiUrl) {
+			axios.get(apiUrl)
 				.then((response) => {
 					console.log(response.data);
 					this.discs = response.data;
