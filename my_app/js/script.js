@@ -18,7 +18,8 @@ createApp({
 					this.discs = response.data;
 				})
 				.catch(function (error) {
-					console.log(error);
+					console.log('erro ao buscar discos', error);
+					alert("Erro ao carregar os discos!");
 				});
 		},
 		// getImagePath: function(imgPath){
