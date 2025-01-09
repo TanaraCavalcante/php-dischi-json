@@ -16,10 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 //! Prendo l'api 
 $apiDischi = file_get_contents("../api/dischi.json");
 
-if ($apiDischi === false) {
-    die('Erro ao ler o arquivo JSON');
-}
-
 //! Risposta in Json
 header("Content-Type: application/json");
 
