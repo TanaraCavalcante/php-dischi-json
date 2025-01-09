@@ -4,15 +4,15 @@ const { createApp } = Vue
 createApp({
 	data() {
 		return {
-			apiUrl: "http://localhost/php-dischi-json/database/server.php",
+			apiUrl: "http://localhost/php-dischi-json/api/server.php",
 			discs: [],
 		}
 	},
 	
 	methods: {
 		//!Chiamata GET per i dischi
-		getDiscs(apiUrl) {
-			axios.get(apiUrl)
+		getDiscs(url) {
+			axios.get(url)
 				.then((response) => {
 					console.log(response.data);
 					this.discs = response.data;
