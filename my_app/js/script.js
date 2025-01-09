@@ -4,7 +4,7 @@ const { createApp } = Vue
 createApp({
 	data() {
 		return {
-			apiUrl: "http://localhost/php-dischi-json/api/server.php",
+			apiUrl: "http://localhost/PHP-8/php-dischi-json/database/server.php",
 			discs: [],
 		}
 	},

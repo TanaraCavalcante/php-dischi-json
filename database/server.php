@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 }
 
 //! Prendo l'api 
-$apiDischi = file_get_contents("db/dischi.json");
+$apiDischi = file_get_contents("../api/dischi.json");
 
 if ($apiDischi === false) {
     die('Erro ao ler o arquivo JSON');
